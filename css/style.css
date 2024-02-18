@@ -47,6 +47,10 @@ a {
     justify-content: space-evenly;
 }
 
+.responsive_bar, .nav_input {
+    display: none;
+}
+
 .nav_menu > ul {
     display: flex;
     gap: 33px;
@@ -56,10 +60,6 @@ a {
     border-bottom: var(--color-nectar) 5px solid;
     transition: .3s;
 }
-
-.nav_sublist-ul {display: none;}
-
-.nav_menu_responsive {display: none;}
 
 /* <---------------------- END HEADER----------------------> */
 
@@ -356,14 +356,62 @@ a {
     border-radius: 50%;
 }
 
+/* <------------- END MAIN --------------> */
+/* <------------- FOOTER -------------------> */
 
-
-@media only screen and (min-width: 768px) and (max-width: 1204px) {
-	
-	
+.footer {
+    background-color: #000;
+    color: #fff;
 }
+
+.logo-footer > img {
+    width: 200px;
+}
+
 
 @media only screen and (max-width: 767px) {
-    
+    .header_all {position: fixed;}
+    .nav_menu {
+        position: fixed;
+        background: #0000006b;
+        width: 100%;
+        top: 90px;
+        left: 0;
+        bottom: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .6s;
+    }
+    .nav_menu > ul{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0; 
+        text-align: center;
+    }
+
+    .nav_list {padding: 1.4em 0;} 
+
+    .responsive_bar {
+        display: block;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+    .nav_input:checked + .nav_menu {
+        background-color: #0000006b;
+        clip-path: polygon(0 0, 100% 0, 100% 99%, 0 99%);
+        transition: clip-path .4s;
+    }
+    .chef-principal {display: none;}
+
+    .container_hero {background-position: 50% 50%;}
+    .img-carrusel, .img-carrusel2, .img-carrusel3, .img-carrusel4 {background-position: 38% 38%;}
+    .overlow {left: 48px; width: 99%;}
+    .span-text-hero{font-size: 5em;}
 
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1204px) {
+	.span-text-hero {font-size: 7em;}
+}
+
