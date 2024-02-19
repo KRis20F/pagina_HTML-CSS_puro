@@ -1,0 +1,41 @@
+:root {
+    --color-nectar: #ac0000;
+    --fuente-nectar: 'Playfair Display', serif;
+}
+
+.background_main_carta {
+    background-image: url('../img/bg_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+    background-attachment: fixed;
+}
+
+.title_category, .title-drinks {
+    font-family: var(--fuente-nectar);
+    color: var(--color-nectar);
+    text-align: center;
+    font-size: 5em;
+    padding: .4em 0;
+}
+
+.title-drinks {font-size: 3em;}
+
+.main-drinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.drinks-cards h2{
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--color-nectar);
+}
+
+.drinks-img-widths {
+  border-radius: 13px;
+    width: 100%;
+  height: 380px;
+}
