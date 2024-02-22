@@ -28,7 +28,7 @@ a {
 
 /* <------------------ HEADER  ----------------------> */
 .header_start{font-family: var(--fuente-nectar), serif;}
-.cherry-title {width: 90px;}
+.cherry-title {width: 75px;}
 
 .header_all {
     position: absolute;
@@ -44,7 +44,7 @@ a {
 .header_all > .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .responsive_bar, .nav_input {
@@ -53,12 +53,38 @@ a {
 
 .nav_menu > ul {
     display: flex;
-    gap: 33px;
+}
+
+.list-nav-nectar {padding: 30px 22px;}
+
+.services-main-list {
+    position: relative;
+}
+
+.services-submain {
+    position: absolute;
+    top: 76px;
+    left: 8px;
+    display: none;
+    background: #0000006b;
+    padding: 15px;
+    box-sizing: content-box;
+    transition: .3s ;
+}
+
+.services-main-list:hover > .services-submain{
+    display: block;
+    transition: .3s ;
+}
+
+.submain-list {
+    margin: 14px 0;
 }
 
 .nav_list:hover {
     border-bottom: var(--color-nectar) 5px solid;
     transition: .3s;
+    
 }
 
 /* <---------------------- END HEADER----------------------> */
@@ -115,7 +141,7 @@ a {
 
 .welcome {
     background-color: #0000006b;
-    width: 88%;
+    width: 80%;
     -webkit-box-shadow: 1px 1px 23px 6px rgba(0,0,0,0.76);
     -moz-box-shadow: 1px 1px 23px 6px rgba(0,0,0,0.76); 
     box-shadow: 1px 1px 23px 6px rgba(0,0,0,0.76);
@@ -319,13 +345,17 @@ a {
 .about-chefs {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 47px;
 }
 
 .title-chef {
+    font-family: var(--fuente-nectar);
     font-size: 3em;
     color: var(--color-nectar);
     text-align: center;
-    padding: 2.2rem 0;
+    padding: 2.7rem 0;
+    text-shadow: 0px 1px black;
+    font-weight: bold;
 }
 
 .chefs-header {    grid-column: 1 / -1;}
@@ -336,6 +366,16 @@ a {
 
 .about-chefs-description {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2em;
+    padding-bottom: 3em;
 }
 
 .cards-chef-nectar {
@@ -343,8 +383,8 @@ a {
     align-items: center;
     gap: 41px;
     border: 3px solid #000;
-    margin: 26px 0;
     border-radius: 23px;
+    justify-content: space-between;
 }
 
 .title-description-chefs-about {font-size: 2em; color: var(--color-nectar);}
@@ -352,6 +392,17 @@ a {
 .cards-chef-nectar > img {
     height: 115px;
     border-radius: 21%;
+}
+
+.items-about-chefs {
+    display: flex;
+    font-size: 1.5em;
+    gap: 29px;
+    margin: 0 14px;
+}
+
+.chef-reds > i {
+    border-radius: 20px;
 }
 
 /* <------------- END MAIN --------------> */
@@ -398,7 +449,7 @@ a {
     .header_all {position: fixed; }
     .nav_menu {
         position: fixed;
-        background: #0000006b;
+        background: #000;
         width: 100%;
         top: 90px;
         left: 0;
@@ -424,7 +475,7 @@ a {
     }
 
     .nav_input:checked + .nav_menu {
-        background-color: #0000006b;
+        background-color: #000;
         clip-path: polygon(0 0, 100% 0, 100% 99%, 0 99%);
         transition: clip-path .4s;
     }
@@ -433,16 +484,21 @@ a {
     .container_hero {background-position: 50% 50%;}
     .img-carrusel, .img-carrusel2, .img-carrusel3, .img-carrusel4 {background-position: 38% 38%;}
     .p-hero {padding: 40px 0;}
-    .overlow {left: 48px; width: 99%;}
+    .overlow { left: 5px; width: 99%; }
+    .welcome {margin: 0 auto;}
     .span-text-hero{font-size: 5em;}
     .services-nectar > .wrapper, .links{flex-direction: column;}
     .services {flex-direction: column;}
+    .about-chefs {grid-template-columns: 1fr; padding: 1.3em;}
     .slider-content {
         grid-template-columns: repeat(8,336px);
         overflow: scroll;
         margin: 0;
     }
+    .cards-chef-nectar {margin: 29px 11px;; flex-direction: column;}
+    .about-chefs-description {margin: 0 auto; flex-direction: row;}
     .box-slider {animation: none;}
+    .items-about-chefs {gap: 19px;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1204px) {

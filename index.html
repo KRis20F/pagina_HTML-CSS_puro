@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
 
@@ -21,12 +21,6 @@
 
 </head>
 <body>
-    <!-- Nos
-        Encanta
-        Cumplir
-        Tus
-        Antojos
-        R -->
     <div id="wrapper">
         <header class="header_start">
             <div class="header_all">
@@ -43,11 +37,17 @@
                         <input type="checkbox" id="main" class="nav_input">    <!-- Menu bar on mobile view -->
                         <nav class="nav_menu">    
                             <ul>
-                                <li><a href="index.html" class="nav_list">Home</a></li>
-                                <li><a href="menu.html" class="nav_list box-list">Menu</a></li>
-                                <li><a href="#" class="nav_list">Services</a></li>
-                                <li><a href="#" class="nav_list">About us</a></li>
-                                <li><a href="#" class="nav_list">Contact</a></li>
+                                <li class="list-nav-nectar"><a href="index.html" class="nav_list">Home</a></li>
+                                <li class="list-nav-nectar"><a href="menu.html" class="nav_list box-list">Menu</a></li>
+                                <li class="list-nav-nectar services-main-list">
+                                    <a href="#" class="nav_list">Services</a>
+                                    <ul class="services-submain">
+                                        <li class="submain-list"><a href="#">Ordenar</a></li>
+                                        <li class="submain-list"><a href="#">Delivery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-nav-nectar"><a href="#" class="nav_list">About us</a></li>
+                                <li class="list-nav-nectar"><a href="#" class="nav_list">Contact</a></li>
                             </ul>
                         </nav>     
                     </div>
@@ -65,7 +65,7 @@
                                     <p class="p-hero">Bienvenida a Nectar, donde el café, las comidas, el aroma y experiencias se entrelazan.</p>
                                 </div>
                                 <div class="buttoms-hero">
-                                    <a href="ordenar.html" class="bottom-order">Ordena Ahora</a>
+                                    <a href="/ordernar.html" class="bottom-order">Ordena Ahora</a>
                                     <a href="menu.html" class="bottom-view-menu">Wiev Menu</a>
                                 </div>
                             </div>
@@ -202,12 +202,11 @@
                                     <h2>Pepito Relleno</h2>
                                 </div>
                             </div>
-                            <!-- <div class="box-slider">
+                            <div class="box-slider">
                                 <img class="image-slider-fest" src="./img/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" alt="pepito">
                                 <div class="title-box-food">
                                     <h2>Pepito Relleno</h2>
                                 </div>
-                            </div> -->
                             </div>
                         </div>   
                     </div>
@@ -258,25 +257,51 @@
             </section>
             <section class="section-chefs">
                 <div class="wrapper">
+                    <h2 class="title-chef">Chefs Internacionales en Nectar</h2>
                     <article class="about-chefs">
-                        <header class="chefs-header">
-                            <h2 class="title-chef">Chefs Internacionales en Nectar</h2>
-                        </header>
                         <div class="text-chefs-context">
-                            <p>En Nectar, nos enorgullece presentar una experiencia culinaria única que trasciende fronteras. Sumérgete en el fascinante mundo de la gastronomía internacional con nuestra destacada sección "Chefs Internacionales". Cada uno de nuestros chefs trae consigo una riqueza de conocimientos, técnicas y sabores, fusionando lo mejor de diversas culturas culinarias para deleitar tu paladar. En Nectar, celebramos la diversidad culinaria y te invitamos a unirte a nosotros en este emocionante viaje gastronómico. Descubre el mundo a través del paladar en "Cocinas del Mundo en Nectar: Encuentro con Chefs Internacionales". Te aseguramos una experiencia que va más allá de lo común, donde cada plato es una obra maestra y cada comida es una celebración de la cocina global. ¡Bienvenido a una experiencia culinaria que cruza fronteras en cada bocado!</p>
+                            <p>En <span>Nectar</span>, nos enorgullece presentar una <span>experiencia culinaria única</span> que trasciende fronteras. Sumérgete en el fascinante mundo de la gastronomía internacional con nuestra destacada sección "Chefs Internacionales". Cada uno de nuestros chefs trae consigo una riqueza de conocimientos, técnicas y sabores, fusionando lo mejor de diversas culturas culinarias para deleitar tu paladar. En Nectar, celebramos la diversidad culinaria y te invitamos a unirte a nosotros en este emocionante viaje gastronómico. Descubre el mundo a través del paladar en "Cocinas del Mundo en Nectar: Encuentro con Chefs Internacionales". Te aseguramos una experiencia que va más allá de lo común, donde cada plato es una obra maestra y cada comida es una celebración de la cocina global. ¡Bienvenido a una experiencia culinaria que cruza fronteras en cada bocado!</p>
                             <div class="about-chefs-description">
                                 <h4 class="title-description-chefs-about">Algunos de nuestros chefs </h4>
                                 <div class="cards-chef-nectar">
                                     <img src="img/chef2.jpg" alt="chef-nectar-smaller">
                                     <h4>Jhon Smith</h4>
+                                    <div class="items-about-chefs">
+                                        <a class="chef-reds linkending-chef" href="https://www.facebook.com/?locale=es_ES"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a class="chef-reds github-chefs" href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a class="chef-reds instragram-chef" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="chef-reds twiter-chef" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
                                 </div>
                                 <div class="cards-chef-nectar">
                                     <img src="img/chefs2.jpg" alt="chef-nectar-smaller">
-                                    <h4>Marcus  Johnson</h4>
+                                    <h4>Marc Johnson</h4>
+                                    <div class="items-about-chefs">
+                                        <a class="chef-reds linkending-chef" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a class="chef-reds github-chefs" href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a class="chef-reds instragram-chef" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="chef-reds twiter-chef" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
                                 </div>
                                 <div class="cards-chef-nectar">
                                     <img src="img/chef3.jpeg" alt="chef-nectar-smaller">
                                     <h4>Ethan Hawke</h4>
+                                    <div class="items-about-chefs">
+                                        <a class="chef-reds linkending-chef" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a class="chef-reds github-chefs" href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a class="chef-reds instragram-chef" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="chef-reds twiter-chef" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cards-chef-nectar">
+                                    <img src="img/chef4.jpg" alt="chef-nectar-smaller">
+                                    <h4>Mike Afton</h4>
+                                    <div class="items-about-chefs">
+                                        <a class="chef-reds linkending-chef" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a class="chef-reds github-chefs" href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a class="chef-reds instragram-chef" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="chef-reds twiter-chef" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
                                 </div>
                             </div>    
                         </div>

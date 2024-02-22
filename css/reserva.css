@@ -1,0 +1,83 @@
+:root {
+    --color-nectar: #ac0000;
+    --fuente-nectar: 'Playfair Display', serif;
+}
+
+.form-reserva {
+    background-image: url('../img/cafe-hero.jpg');
+    height: 100vh;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-reserva {
+    font-size: 2.5em;
+    font-family: var(--fuente-nectar);
+    color: var(--color-nectar);
+    text-shadow: 6px 4px 5px black;
+    margin-top: 5rem;
+}
+
+.formulary {
+    background-color: #0000006b;
+    padding: 25px;
+    margin: 2em 0 0 0;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.form-ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.form_ul_li {position: relative; padding: 10px; }
+
+.form_ul_li input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.wrapper .form_ul_li label {
+    position: absolute;
+    top:-3px;
+    left: 8px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+  .wrapper .form_ul_li input:focus ~ label,
+   .form_ul_li input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--color-nectar);
+    font-size: 12px;
+  }
+  
+
+.float {
+    margin-top: 2em;
+    float: right;
+    outline: none;
+    background: var(--color-nectar);
+    border: none;
+    display: block;
+    border-radius: 9px;
+    padding: 7px;
+}
+

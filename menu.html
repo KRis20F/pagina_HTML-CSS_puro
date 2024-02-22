@@ -37,11 +37,17 @@
                         <input type="checkbox" id="main" class="nav_input">    <!-- Menu bar on mobile view -->
                         <nav class="nav_menu">    
                             <ul>
-                                <li><a href="index.html" class="nav_list">Home</a></li>
-                                <li><a href="menu.html" class="nav_list box-list">Menu</a></li>
-                                <li><a href="#" class="nav_list">Services</a></li>
-                                <li><a href="#" class="nav_list">About us</a></li>
-                                <li><a href="#" class="nav_list">Contact</a></li>
+                                <li class="list-nav-nectar"><a href="index.html" class="nav_list">Home</a></li>
+                                <li class="list-nav-nectar"><a href="menu.html" class="nav_list box-list">Menu</a></li>
+                                <li class="list-nav-nectar services-main-list">
+                                    <a href="#" class="nav_list">Services</a>
+                                    <ul class="services-submain">
+                                        <li class="submain-list"><a href="#">Ordenar</a></li>
+                                        <li class="submain-list"><a href="#">Delivery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-nav-nectar"><a href="#" class="nav_list">About us</a></li>
+                                <li class="list-nav-nectar"><a href="#" class="nav_list">Contact</a></li>
                             </ul>
                         </nav>     
                     </div>
@@ -72,56 +78,325 @@
         <main id="carta">
             <h2 class="title_category">Nuestras Cartas</h2>
             <div class="container_main">
-                <div class="wrapper">
-                    <h2 class="title-drinks">Bebidas y Cockteles</h2>
-                    <section class="main-drinks">
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/cocktail.jpg" alt="cockteles en nectar">
-                            <h2>Bebida 1</h2>
-                            <p>10.00 €</p>
+                <section class="next-main summary-main">
+                    <div class="wrapper">
+                        <div class="summary">
+                            <div class="summary-startup">
+                                <h3 class="title-startup">Startup</h3>
+                                <div class="cards-starts">
+                                    <img class="img-sumary width-exp" src="img/dish-3.jpg" alt=""/>
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="starts-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-starts">
+                                    <img class="img-sumary" src="img/dish-1.jpg" alt=""/>
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, distinctio.</p>
+                                    </div>
+                                    <div class="starts-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-starts">
+                                    <img class="img-sumary" src="img/kebab-slider.jpg" alt=""/>
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="starts-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-starts">
+                                    <img class="img-sumary" src="img/paella-thegem-product-single.jpg" alt="">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="starts-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary-drinks">
+                                <h3 class="title-startup">Bebidas</h3>
+                                <div class="cards-drinks">
+                                    <img class="img-sumary" src="img/drink10.jpg" alt="bebida nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-drinks">
+                                    <img class="img-sumary" src="img/drink7.jpg" alt="bebida nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-drinks">
+                                    <img class="img-sumary" src="img/drink11.jpg" alt="bebida nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-drinks">
+                                    <img class="img-sumary" src="img/drink12.jpg" alt="bebida nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary-coffe">
+                                <h3 class="title-startup">Cafes</h3>
+                                <div class="cards-coffe">
+                                    <img class="img-sumary" src="img/cafe1.jpg" alt="cafe-nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-coffe">
+                                    <img class="img-sumary" src="img/cafe2.jpg" alt="cafe-nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-coffe">
+                                    <img class="img-sumary" src="img/cafe3.jpg" alt="cafe-nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-coffe">
+                                    <img class="img-sumary" src="img/cafe4.jpg" alt="cafe-nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary-desserts">
+                                <h3 class="title-startup">Postres</h3>
+                                <div class="cards-dessert">
+                                    <img class="img-sumary" src="img/postre.jpg" alt="postres de nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-dessert">
+                                    <img class="img-sumary" src="img/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" alt="postres de nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-dessert">
+                                    <img class="img-sumary" src="img/postre3.jpg" alt="postres de nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                                <div class="cards-dessert">
+                                    <img class="img-sumary" src="img/postre4.jpg" alt="postres de nectar">
+                                    <div class="text-float">
+                                        <h3>Comida</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit.</p>
+                                    </div>
+                                    <div class="drinks-price">
+                                        <span>10.00$</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/cocktail2.jpg" alt="cockteles en nectar">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/cocktail3.jpg" alt="cockteles en nectar">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/cocktail4.jpg" alt="cockteles en nectar">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/cocktail5.jpg" alt="cockteles en nectar">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/drink6.jpg" alt="">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/drink7.jpg" alt="">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/drink8.jpg" alt="">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                        <div class="drinks-cards">
-                            <img class="drinks-img-widths" src="img/drink9.jpg" alt="">
-                            <h2>Bebida </h2>
-                            <p>10.00 €</p>
-                        </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
+                <section class="cocktekes">
+                    <div class="wrapper">
+                        <h2 class="title-drinks">Bebidas y Cockteles</h2>
+                        <section class="main-drinks">
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/cocktail.jpg" alt="cockteles en nectar">
+                                <h2>Bebida 1</h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/cocktail2.jpg" alt="cockteles en nectar">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/cocktail3.jpg" alt="cockteles en nectar">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/cocktail4.jpg" alt="cockteles en nectar">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/cocktail5.jpg" alt="cockteles en nectar">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/drink6.jpg" alt="">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/drink7.jpg" alt="">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/drink8.jpg" alt="">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main drinks-cards">
+                                <img class="drinks-img-widths" src="img/drink9.jpg" alt="">
+                                <h2>Bebida </h2>
+                                <p>10.00 €</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="startup-stars">
+                    <div class="wrapper">
+                        <h2 class="title-drinks">Bebidas y Cockteles</h2>
+                        <section class="main-drinks">
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/Arepas.webp" alt="cockteles en nectar">
+                                <h2>Comida 1</h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/hamburguesa.jpg" alt="cockteles en nectar">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/paella.jpg" alt="cockteles en nectar">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/ceviche1.jpg" alt="cockteles en nectar">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/dish-3.jpg" alt="cockteles en nectar">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/pabellon-original.jpg" alt="">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/casey-lee-awj7sRviVXo-unsplash.jpg" alt="">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/comida1.jpg" alt="">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                            <div class="card-main startup-card">
+                                <img class="drinks-img-widths" src="img/sopa-slider.jpg" alt="">
+                                <h2>Comida  </h2>
+                                <p>10.00 €</p>
+                            </div>
+                        </section>
+                        <section class="startup-stars">
+                            <div class="wrapper">
+                                <h2 class="title-drinks">Bebidas y Cockteles</h2>
+                                <section class="main-drinks">
+                                    <div class="card-main startup-card">
+                                        <img class="drinks-img-widths" src="img/cafe7.jpg" alt="cockteles en nectar">
+                                        <h2>Comida 1</h2>
+                                        <p>10.00 €</p>
+                                    </div>
+                                    <div class="card-main startup-card">
+                                        <img class="drinks-img-widths" src="img/cafe 6.jpg" alt="cockteles en nectar">
+                                        <h2>Comida  </h2>
+                                        <p>10.00 €</p>
+                                    </div>
+                                    <div class="card-main startup-card">
+                                        <img class="drinks-img-widths" src="img/cafe3.jpg" alt="cockteles en nectar">
+                                        <h2>Comida  </h2>
+                                        <p>10.00 €</p>
+                                    </div>
+                                    <div class="card-main startup-card">
+                                        <img class="drinks-img-widths" src="img/cafe1.jpg" alt="cockteles en nectar">
+                                        <h2>Comida  </h2>
+                                        <p>10.00 €</p>
+                                    </div>
+                                    <div class="card-main startup-card">
+                                        <img class="drinks-img-widths" src="img/dish-3.jpg" alt="cockteles en nectar">
+                                        <h2>Comida  </h2>
+                                        <p>10.00 €</p>
+                                    </div>
+                                    <div class="card-main startup-card">
+                                        <img class="drinks-img-widths" src="img/pabellon-original.jpg" alt="">
+                                        <h2>Comida  </h2>
+                                        <p>10.00 €</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="footer">

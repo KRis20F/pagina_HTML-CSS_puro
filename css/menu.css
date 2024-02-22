@@ -7,9 +7,57 @@
     background-image: url('../img/bg_2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 690px;
+    height: 700px;
     background-attachment: fixed;
 }
+
+.summary {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    column-gap: 14em; 
+    max-width: 1145px;
+    
+}
+
+.summary-startup, .summary-drinks, .summary-coffe, .summary-desserts {    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 36px 0;
+}
+
+.cards-starts, .cards-drinks, .cards-coffe, .cards-dessert {
+    display: flex;
+    align-items: center;
+}
+
+.title-startup {
+    font-size: 2em;
+    margin-left: 17px;
+}
+
+.img-sumary {
+    flex-basis: 130px;
+    width: 100%;
+    height: 84px;
+    border-radius: 50%;    
+}
+
+.text-float {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 12px;
+    margin: 0 16px;
+}
+
+.text-float > h3 {
+    font-size: 1.5em;}
+
+.start-price {align-self: flex-start; margin-top: 18px;}
+
+.width-exp {height: 91px; width: 88px;}
 
 .title_category, .title-drinks {
     font-family: var(--fuente-nectar);
@@ -19,13 +67,13 @@
     padding: .4em 0;
 }
 
-.title-drinks {font-size: 3em;}
+.title-drinks {font-size: 3em; font-weight: bold;}
 
 .main-drinks {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(243px, 1fr));
+    column-gap: 85px;
+    row-gap: 59px;
 }
 
 .drinks-cards h2{
@@ -38,4 +86,9 @@
   border-radius: 13px;
     width: 100%;
   height: 380px;
+}
+
+@media only screen and (max-width: 767px) {
+    .summary {gap: 2.4em; margin: 0 50px;}
+    .main-drinks {    margin: 0 60px;    }
 }
